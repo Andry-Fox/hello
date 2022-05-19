@@ -1,0 +1,117 @@
+.modal {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    top: -1000px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    padding: 60px 15px;
+}
+
+.hide {
+    overflow: hidden;
+}
+
+.modal_active {
+    position: fixed;
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
+}
+
+.modal__content {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 5px 10px #322f2f;
+    display: flex;
+    justify-content: center;
+    background-color: cornflowerblue;
+}
+
+.modal__close-button {
+    background: #ff0000;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: none;
+    cursor: pointer;
+    transition: .3s;
+    outline: none;
+}
+
+.modal__title {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+
+.modal__description {
+    font-size: 1.125rem;
+}
+
+.modal_input {
+    min-width: 450px;
+    min-height: 50px;
+    margin-top: 12.5px;
+    margin-bottom: 12.5px;
+    font-size: 24px;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+}
+
+.modal_input:active {
+outline: 0px;
+}
+
+.modal_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal_but {
+    min-width: 150px;
+    min-height: 50px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: none;
+}
+
+.modal_h2 {
+    align-self: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.modal_p {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 10px;
+}
+
+.modal_b_1:hover {
+    background-color: rgb(238, 92, 92)
+}
+
+.modal_b_2:hover {
+    background-color: greenyellow;
+}

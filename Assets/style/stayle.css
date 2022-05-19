@@ -92,8 +92,11 @@ body {
     display: inline-block;
     margin-top: 71px;
     text-decoration: none;
+    border: none;
 }
-
+.top_button:hover {
+    background-color: #77b7f0;
+}
 
 /* WHAT WE DO */
 .what_we_do {
