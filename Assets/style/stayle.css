@@ -46,7 +46,7 @@ body {
     padding-top: 115px;
 
     flex-grow: 1;
-    background-image: url(../Img/illustration.png);
+    background-image: url(../images/illustration.png);
     background-repeat: no-repeat;
     background-position: right center;
 }

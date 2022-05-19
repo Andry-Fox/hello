@@ -39,6 +39,7 @@
     display: flex;
     justify-content: center;
     background-color: cornflowerblue;
+    flex-direction: column;
 }
 
 .modal__close-button {
@@ -105,7 +106,7 @@ outline: 0px;
 .modal_p {
     display: flex;
     justify-content: space-between;
-    margin: 25px 10px;
+    margin: 35px 10px 0;
 }
 
 .modal_b_1:hover {

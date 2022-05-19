@@ -31,18 +31,28 @@
                 <!-- Модальное окно -->
                 <div class="modal" id="modal-1">
                     <div class="modal__content">
-                        <button class="modal__close-button"><img src="assets/images/Esc.svg" alt="Close"></button>
                         <!-- Контент модального окна -->
                         <form class="modal_form">
                             <h2 class="modal_h2">Join Us, Now</h2>
                             <input class="modal_input" type="text" placeholder="Name">
                             <input class="modal_input" type="email" placeholder="Email">
                             <input class="modal_input" type="password" placeholder="Password">
-                            <p class="modal_p">
-                                <button class="modal_but modal_b_1">Close</button>
-                                <button class="modal_but modal_b_2">Confirm</button>
-                            </p>
                         </form>
+                        <p class="modal_p">
+                            <button class="modal_but modal_b_1">Close</button>
+                            <button id="modal_b_2" class="modal_but modal_b_2">Submit</button>
+                        </p>
+                        <!-- Модальное окно -->
+                        <div class="modal" id="modal-2">
+                            <div class="modal__content">
+                                <!-- Контент модального окна 2 -->
+                                <h2 class="modal_h2">Are you sure?</h2>
+                                <p class="modal_p">
+                                    <button id="modal_b_1" class="modal_but modal_b_1">Refuse</button>
+                                    <button id="modal_b_3" class="modal_but modal_b_2">Accept</button>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
