@@ -33,29 +33,29 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-
-    let sabmitButton = document.getElementById('modal_b_2');
+    let subButton = document.getElementById('sub-but');
 
     let modal2 = document.getElementById('modal-2');
 
-    let refuseButton = modal1.getElementsByClassName('modal_b_1')[1];
+    let acceptButton = document.getElementById('modal_accept')
+    
+    let clButton = modal2.getElementsByClassName('modal_b_refuse')[0];
 
-    sabmitButton.onclick = function () {
+    subButton.onclick = function (e) {
+        e.preventDefault();
         modal2.classList.add('modal_active');
         tagBody.classList.add('hide');
     }
-    refuseButton.onclick = function (e) {
+
+    clButton.onclick = function (e) {
         e.preventDefault();
         modal2.classList.remove('modal_active');
-        tagBody.classList.remove('hide');
     }
 
-    let asseptButton = document.getElementById('modal_b_3');
-
-    asseptButton.onclick = function () {
-        modal2.classList.remove('modal_active');
+    acceptButton.onclick = function (e) {
+        e.preventDefault();
         modal1.classList.remove('modal_active');
+        modal2.classList.remove('modal_active');
         tagBody.classList.remove('hide');
     }
-
 });
