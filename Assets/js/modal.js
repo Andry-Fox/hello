@@ -32,16 +32,4 @@ document.addEventListener('DOMContentLoaded', () => {
             tagBody.classList.remove('hide');
         }
     };
-
-    // Вызов модального окна несколькими кнопками на странице
-    let buttonOpenModal1 = document.getElementsByClassName('get-modal_1');
-
-    for (let button of buttonOpenModal1) {
-        button.onclick = function (e) {
-            e.preventDefault();
-            modal1.classList.add('modal_active');
-            tagBody.classList.add('hide');
-        }
-    }
-
 });
