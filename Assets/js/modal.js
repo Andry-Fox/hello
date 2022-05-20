@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     acceptButton.onclick = function (e) {
         e.preventDefault();
-        console.log('Имя: ' + name.value.replace(/-/ig, '_'));
+        console.log('Имя: ' + name.value.replace(/-/g, '_'));
         console.log('Почта: ' + email.value)
         console.log('Пароль: ' + password.value)
         modal1.classList.remove('modal_active');
@@ -64,6 +64,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     name.addEventListener('input', function (e) {
         e.target.value = e.target.value.replace(/ /ig, '-');
+        console.log(name.value)
     });
+
+
+        
 });
 
