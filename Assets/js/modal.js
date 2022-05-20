@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let modal2 = document.getElementById('modal-2');
 
     let acceptButton = document.getElementById('modal_accept')
-    
+
     let clButton = modal2.getElementsByClassName('modal_b_refuse')[0];
 
     subButton.onclick = function (e) {
@@ -53,18 +53,17 @@ document.addEventListener('DOMContentLoaded', () => {
     let email = document.getElementById('email')
     let password = document.getElementById('password')
 
-    name.addEventListener('input', function(e){
-        e.target.value = e.target.value.replace(/ /ig, '-');
-      });
-
     acceptButton.onclick = function (e) {
         e.preventDefault();
-        console.log('Имя: ' + name.value.replace(/ /ig, '_'));
+        console.log('Имя: ' + name.value.replace(/-/ig, '_'));
         console.log('Почта: ' + email.value)
         console.log('Пароль: ' + password.value)
         modal1.classList.remove('modal_active');
         modal2.classList.remove('modal_active');
         tagBody.classList.remove('hide');
     }
+    name.addEventListener('input', function (e) {
+        e.target.value = e.target.value.replace(/ /ig, '-');
+    });
 });
 
