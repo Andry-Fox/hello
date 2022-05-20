@@ -48,24 +48,23 @@ document.addEventListener('DOMContentLoaded', () => {
         modal2.classList.remove('modal_active');
     }
 
+    //Вывод в консоль
+    let name = document.getElementById('name')
+    let email = document.getElementById('email')
+    let password = document.getElementById('password')
+
+    name.addEventListener('input', function(e){
+        e.target.value = e.target.value.replace(/ /ig, '-');
+      });
+
     acceptButton.onclick = function (e) {
         e.preventDefault();
+        console.log('Имя: ' + name.value.replace(/ /ig, '_'));
+        console.log('Почта: ' + email.value)
+        console.log('Пароль: ' + password.value)
         modal1.classList.remove('modal_active');
         modal2.classList.remove('modal_active');
         tagBody.classList.remove('hide');
-    }
-
-
-    //Вывод в консоль
-    let Name = document.getElementById('Name')
-    let Email = document.getElementById('Email')
-    let Password = document.getElementById('Password')
-
-    acceptButton.onclick = function (e) {
-        e.preventDefault();
-        console.log('Имя: ' + Name.value.replace(/ /ig, '_'));
-        console.log('Почта: ' + Email.value)
-        console.log('Пароль: ' + Password.value)
     }
 });
 
