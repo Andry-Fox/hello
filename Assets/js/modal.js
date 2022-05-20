@@ -1,15 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // Кнопка по которой происходит клик
     let callBackButton = document.getElementById('join-button');
 
-    // Модальное окно, которое необходимо открыть
     let modal1 = document.getElementById('modal-1');
 
-    // Кнопка "закрыть" внутри модального окна
     let closeButton = modal1.getElementsByClassName('modal_b_1')[0];
 
-    // Тег body для запрета прокрутки
     let tagBody = document.getElementById('bb');
 
     callBackButton.onclick = function (e) {
@@ -58,4 +54,18 @@ document.addEventListener('DOMContentLoaded', () => {
         modal2.classList.remove('modal_active');
         tagBody.classList.remove('hide');
     }
+
+
+    //Вывод в консоль
+    let Name = document.getElementById('Name')
+    let Email = document.getElementById('Email')
+    let Password = document.getElementById('Password')
+
+    acceptButton.onclick = function (e) {
+        e.preventDefault();
+        console.log('Имя: ' + Name.value.replace(/ /ig, '_'));
+        console.log('Почта: ' + Email.value)
+        console.log('Пароль: ' + Password.value)
+    }
 });
+
